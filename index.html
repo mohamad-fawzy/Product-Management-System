@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/CSSCRUDS.css">
+    <!-- Font Awesome Free 6.1.2 -->
+    <link rel="stylesheet" href="css/all.min.css">  
+    <title>Document</title>
+
+</head>
+<body>
+    <div class="crud">
+        <!-- head -->
+
+        <div class="head">
+            <h2>cruds</h2>
+            <p>product management system</p>
+        </div>
+
+
+        <!-- inputs -->
+
+        <div class="inputs">
+            <input type="text" placeholder="title" name="" id="title">
+            <div class="price">
+                <input type="number" onkeyup="sumTotal()" name="" id="price" placeholder="price">
+                <input type="number" onkeyup="sumTotal()" name="" id="texes" placeholder="texes">
+                <input type="number" onkeyup="sumTotal()" name="" id="ads" placeholder="ads">
+                <input type="number" onkeyup="sumTotal()" name="" id="discount" placeholder="discount">
+                <small id="total">20</small>     
+            </div>
+            <input type="number" name="" id="count" placeholder="count">
+            <input type="text" name="" id="category" placeholder="category">
+            <button type="submit" id="submit">create</button>
+        </div>
+
+
+        <!-- outputs -->
+        <div class="outputs">
+            <div class="searchBlok">
+                <input type="text" name="" id="search" placeholder="search">
+                <div class="btnSearch">
+                    <button id="searchTitel" >search by titel</button>
+                    <button id="searchCategory">search by category</button>
+                </div>
+            </div>
+
+        </div>
+
+        <table>
+            <tr>
+                <th>id</th>
+                <th>titel</th>
+                <th>price</th>
+                <th>taxes</th>
+                <th>ads</th>
+                <th>discount</th>
+                <th>total</th>
+                <th>category</th>
+                <th>update</th>
+                <th>delete</th>
+            </tr>
+
+            <tbody id="shData">
+                <tr>
+                    <td>1</td>
+                    <td>sansong</td>
+                    <td>2000</td>
+                    <td>1000</td>
+                    <td>1000</td>
+                    <td>100</td>
+                    <td>20</td>
+                    <td>20</td>
+                    <td>phone</td>
+                    <td><button id="update">update</button></td>
+                    <td><button id="delete">delete</button></td>
+                </tr>
+
+            </tbody>
+        </table>
+
+
+    </div>
+</body>
+<script src="js/JSCRUDS.js"></script>
+</html>
